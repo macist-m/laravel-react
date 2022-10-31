@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-plain .rdt_Table::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+.table-plain .rdt_Table::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.table-plain {
+  position: relative;
+}
+
+.table-plain header {
+  padding: 10px;
+}
+
+.table-plain .table-loader {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: #0c111b;
+  width: 100%;
+  height: calc(100% - 125px);
+}
+
+.table-plain .rdt_Table {
+  height: calc(100vh - 245px);
+  position: relative;
+  overflow: auto;
+}
+
+nav.rdt_Pagination select {
+  display: none;
+}
+
+button#pagination-previous-page:focus,
+button#pagination-next-page:focus {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+nav.rdt_Pagination span:first-child,
+nav.rdt_Pagination div > svg {
+  display: none;
+}
